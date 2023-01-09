@@ -1,0 +1,118 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 300px;
+    cursor: pointer;
+}
+
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    margin-right: 150px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px  20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px;
+    position: relative;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background-image:url(foto/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    
+}
+
+
+.col{
+    flex-basis: 50%;
+    position: relative;
+}
+
+.col h2{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+
+}
+
+.col h2 span{
+    color: red;
+}
+
+
+.col a{
+    text-decoration: none;
+    padding: 18px 50px;
+    border-radius: 30px;
+    background: #688000;
+    display: inline-block;
+    color: #000;
+    font-weight: 500;
+    margin-top: 50px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
+    text-transform: lowercase;
+    margin-left:110px;
+}
+
+
+.row h1{
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 500px;
+}
+
+.row h1::after{
+    content: '';
+    background: #010204;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.laundry{
+    margin-top: 100px;
+    letter-spacing: 3px;
+}
+
+.laundry p {
+    color: #ffffff;
+}
+    
